@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #ffe3ec, #fcd5ce, #f9e5e5);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styling */
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(214, 51, 132, 0.15);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Title styling */
+.form-title {
+  color: #d63384;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  animation: slideDown 0.8s ease-out;
+}
+.login-contents{
+  max-width: 400px;
+}
+/* Form input fields */
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #f9c2d1;
+  border-radius: 12px;
+  background-color: #fff0f5;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+.form-group input:focus {
+  border-color: #d63384;
+  box-shadow: 0 0 10px rgba(214, 51, 132, 0.25);
+  outline: none;
+}
+
+/* Button style */
+.buy-button {
+  background: linear-gradient(135deg, #d63384, #ff6f91);
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 16px;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 6px 20px rgba(214, 51, 132, 0.3);
+}
+
+.buy-button:hover {
+  background: linear-gradient(135deg, #c2185b, #f06292);
+  transform: scale(1.04);
+}
+
+.buy-button:disabled {
+  background: #f8a2cb;
+  cursor: not-allowed;
+}
+
+/* Link styling */
+p {
+  margin-top: 20px;
+  font-size: 0.92rem;
+  color: #666;
+}
+
+a {
+  color: #d63384;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 24px 16px;
+    border-radius: 16px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(214, 51, 132, 0.12);
+  }
+
+  .form-group input {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .buy-button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+

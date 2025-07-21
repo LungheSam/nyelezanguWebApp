@@ -1,0 +1,88 @@
+/* Common layout */
+.profile-container,
+.book-container {
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #fce4ec);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  padding: 20px;
+}
+
+
+.salon-details,
+.book-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(214, 51, 132, 0.1);
+  margin-top: 20px;
+}
+
+/* Heading */
+.profile-container h3,
+.book-form h3 {
+  color: #d63384;
+  margin-bottom: 12px;
+}
+
+/* Lists */
+.salon-details ul {
+  padding-left: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.salon-details li {
+  margin-bottom: 6px;
+}
+
+/* Buttons */
+.profile-container button,
+.book-form button {
+  background-color: #d63384;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.profile-container button:hover,
+.book-form button:hover {
+  background-color: #c2185b;
+}
+
+/* Inputs/Selectors */
+.book-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+.book-form select,
+.book-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f9c2d1;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.book-form .error {
+  color: #c2185b;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+    .book-container, .profile-container {
+    width: auto;
+    max-width: 480px;
+  }
+}

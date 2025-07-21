@@ -1,0 +1,19 @@
+.client-header {
+  background-color: #4a154b;
+  color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.client-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.client-header p {
+  font-size: 1rem;
+  color: white !important;
+}

@@ -1,0 +1,88 @@
+.home-client-container {
+  font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fff0f5, #fce4ec);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  padding: 20px;
+}
+.home-client-container a{
+    text-decoration: none;
+}
+/* .client-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.client-header h1 {
+  color: #d63384;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.client-header p {
+  color: #555;
+  font-size: 1rem;
+} */
+
+.client-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: auto;
+}
+
+.action-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(214, 51, 132, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(214, 51, 132, 0.15);
+}
+
+.action-card h2 {
+  color: #c2185b;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.client-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.logout-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: #4a154b;
+  color: #fff;
+  border: 1px solid #f9c2d1;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.logout-button:hover {
+  background: #f9c2d1;
+  transform: translateY(-1px);
+}
+
