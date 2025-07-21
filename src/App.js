@@ -88,15 +88,6 @@ function App() {
           />
           
 
-          <Route
-              path="/"
-              element={
-                <PrivateRoute>
-                  <DashboardRedirect />
-                </PrivateRoute>
-              }
-            />
-
           <Route path="/login" element={<Login />} />
           <Route path="/register-new" element={<Register />} />
           <Route path="/verify" element={<Verify />} />
