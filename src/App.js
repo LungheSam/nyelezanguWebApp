@@ -13,7 +13,7 @@ import Bookings from './pages/client-pages/Bookings';
 import SalonMap from './pages/client-pages/Map';
 import SalonProfile from './pages/client-pages/SalonProfile';
 import BookAppointment from './pages/client-pages/BookAppointment';
-
+import Profile from './pages/client-pages/Profile';
 function App() {
   return (
     <AuthProvider>
@@ -77,6 +77,15 @@ function App() {
               </PrivateRoute>
             }
           />
+          <Route
+            path="/profile"
+            element={
+              <PrivateRoute requiredType="client">
+                <Profile />
+              </PrivateRoute>
+            }
+          />
+
 
           <Route
             path="/home-saloon"

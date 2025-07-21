@@ -66,7 +66,7 @@
   color: #999;
 }
 
-.logout-button {
+.logout-button,.profile-button {
   display: block;
   width: 100%;
   text-align: center;
@@ -80,7 +80,9 @@
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
-
+.profile-button{
+  background-color: #c2185b;
+}
 .logout-button:hover {
   background: #f9c2d1;
   transform: translateY(-1px);

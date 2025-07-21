@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ClientHeader from './ClientHeader';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate,Link } from 'react-router-dom';
 import { doc, getDoc, collection, query, where, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { useAuth } from '../../contexts/AuthContext';
@@ -71,6 +71,9 @@ function BookAppointment() {
   return (
     <div className="book-container">
       <ClientHeader title={salon.name} />
+      <Link to="/" className="error-button">
+                Back to Home
+        </Link>
       <div className="book-form">
         <h3>Book at {salon.name}</h3>
 
@@ -93,7 +96,7 @@ function BookAppointment() {
           minDate={new Date()}
         />
 
-        <label>Time</label>
+        <label>Requested Time</label>
         <input
           type="time"
           value={time}
@@ -101,6 +104,7 @@ function BookAppointment() {
         />
         <h3>Booking Fee: <strong>3000 UGX</strong></h3>
         <button onClick={handleBooking}>Confirm Booking</button>
+        
       </div>
     </div>
   );

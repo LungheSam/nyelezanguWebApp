@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ClientHeader from './ClientHeader';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate,Link } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import '../../styles/SalonBooking.css';
@@ -21,6 +21,9 @@ function SalonProfile() {
   return (
     <div className="profile-container">
       <ClientHeader title={salon.name} />
+      <Link to="/" className="error-button">
+                Back to Home
+      </Link>
       <div className="salon-details">
         <p><h3>Address:</h3> {salon.address}</p>
         <p><h3>Rating:</h3> {salon.rating?.toFixed(1) || 'N/A'}</p>
@@ -34,6 +37,7 @@ function SalonProfile() {
         </ul>
         <h3>Gallery Photos</h3>
         <button onClick={() => navigate(`/book/${id}`)}>Book Appointment</button>
+        
       </div>
     </div>
   );

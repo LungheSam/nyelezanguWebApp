@@ -63,7 +63,7 @@ export default function Search() {
             <p>Rating: {s.rating?.toFixed(1) || 'No rating'}</p>
             <div className="actions">
               <button onClick={() => navigate(`/salon/${s.id}`)}>View Profile</button>
-              <button onClick={() => navigate(`/book/${s.id}`)}>Book</button>
+              <button onClick={() => navigate(`/book/${s.id}`)}>Book Now</button>
             </div>
           </div>
         ))}

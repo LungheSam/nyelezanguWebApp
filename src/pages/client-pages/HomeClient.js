@@ -64,7 +64,10 @@ function HomeClient() {
           <p>View and manage your upcoming appointments.</p>
         </Link>
 
-        {/* ✅ Logout Button */}
+        <button className="action-card profile-button" onClick={() => navigate('/profile')} >
+          My Profile
+        </button>
+
         <button className="action-card logout-button" onClick={handleLogout}>
           Logout
         </button>

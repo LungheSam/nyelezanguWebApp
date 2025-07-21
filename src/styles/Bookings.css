@@ -38,3 +38,42 @@
     max-width: 480px;
   }
 }
+
+
+
+
+
+
+
+
+.booking-card {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Status-based colors */
+.booking-card.pending { 
+  background: #4a154b; 
+  color: #fff 
+}
+.booking-card.pending h3, .booking-card.pending p{
+  color:#fff;
+}
+.booking-card.approved { background: #d63384; }
+.booking-card.disapproved { background: #ffe5e5; }
+.booking-card.reschedule { background: #e5f0ff; }
+
+/* Section titles */
+.section-title {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.booking-card h3 {
+  margin: 0 0 8px;
+}
