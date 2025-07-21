@@ -29,6 +29,15 @@ function App() {
             }
           />
           <Route
+            path="/"
+            element={
+              <PrivateRoute requiredType="client">
+                <HomeClient />
+              </PrivateRoute>
+            }
+          />
+
+          <Route
             path="/search"
             element={
               <PrivateRoute requiredType="client">
@@ -79,7 +88,15 @@ function App() {
           />
           
 
-    
+          <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <DashboardRedirect />
+                </PrivateRoute>
+              }
+            />
+
           <Route path="/login" element={<Login />} />
           <Route path="/register-new" element={<Register />} />
           <Route path="/verify" element={<Verify />} />
