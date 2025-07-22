@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ClientHeader from './ClientHeader';
 import { useParams, useNavigate,Link } from 'react-router-dom';
 import { doc, getDoc, collection, query, where, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '../../firebase';
+import { db,auth } from '../../firebase';
 import { useAuth } from '../../contexts/AuthContext';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -10,7 +10,7 @@ import '../../styles/SalonBooking.css';
 
 function BookAppointment() {
   const { salonId } = useParams();
-  const { currentUser } = useAuth();
+  const { currentUser,userData } = useAuth();
   const navigate = useNavigate();
 
   const [salon, setSalon] = useState(null);
@@ -61,9 +61,29 @@ function BookAppointment() {
       status: 'pending',
       createdAt: serverTimestamp()
     });
+    try {
+      await fetch('https://nyelezanguserver2.onrender.com/api/book', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          uid: currentUser.uid,
+          name: userData.name,          // ✅ now available
+          phone: userData.phone,        // ✅ now available
+          email: userData.email,        // ✅ now available
+          salonId,
+          salonName: salon.name,
+          service,
+          date: start.toISOString(),
+          time,
+        }),
+      });
+    } catch (err) {
+      console.error('Notification failed', err);
+    }
 
-    alert('✅ Booking confirmed!');
+    alert('✅ Booking confirmed! Wait for the salon response');
     navigate('/bookings');
+
   };
 
   if (!salon) return <p>Loading...</p>;

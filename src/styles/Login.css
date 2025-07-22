@@ -34,10 +34,11 @@ body {
 }
 .login-contents{
   max-width: 400px;
+  margin-inline: auto;
 }
 /* Form input fields */
 .form-group input {
-  width: 100%;
+  width: 90%;
   padding: 14px;
   margin: 12px 0;
   border: 1px solid #f9c2d1;
