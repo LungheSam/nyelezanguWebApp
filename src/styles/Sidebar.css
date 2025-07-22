@@ -1,0 +1,95 @@
+/* src/styles/Sidebar.css */
+
+.sidebar {
+  width: 260px;
+  background-color: #4a154b;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.sidebar-header h2 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+  margin-block: 2rem;
+  
+
+}
+
+.sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding:1rem 2rem;
+}
+
+.sidebar-menu a:hover{
+  background-color: #c2185b;
+  cursor: pointer;
+}
+
+.sidebar-menu li button.saloon-logout-btn {
+  background-color: #e53935;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.saloon-logout-btn:hover {
+  background-color: #c62828;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    display: none;
+  }
+
+  .sidebar-overlay.visible {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+}
