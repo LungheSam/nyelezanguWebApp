@@ -14,6 +14,7 @@ import SalonMap from './pages/client-pages/Map';
 import SalonProfile from './pages/client-pages/SalonProfile';
 import BookAppointment from './pages/client-pages/BookAppointment';
 import Profile from './pages/client-pages/Profile';
+import SalonRegister from './pages/SalonRegister';
 function App() {
   return (
     <AuthProvider>
@@ -99,6 +100,7 @@ function App() {
 
           <Route path="/login" element={<Login />} />
           <Route path="/register-new" element={<Register />} />
+          <Route path="/register-new-salon" element={<SalonRegister />} />
           <Route path="/verify" element={<Verify />} />
           <Route path="/unauthorized" element={<Unauthorized />} />
           <Route path="*" element={<NotFound />} />

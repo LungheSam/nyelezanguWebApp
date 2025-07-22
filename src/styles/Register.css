@@ -77,7 +77,19 @@ body {
   background: #f8a2cb;
   cursor: not-allowed;
 }
-
+.add-btn{
+  background: #4a154b;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  width: auto;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 6px 18px rgba(214, 51, 132, 0.3);
+}
 /* Link + text */
 p {
   margin-top: 20px;
@@ -135,4 +147,7 @@ a:hover {
     font-size: 0.85rem;
   }
 }
-
+.error-registration{
+  color:red;
+  font-weight: bold;
+}

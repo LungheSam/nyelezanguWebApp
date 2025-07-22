@@ -89,6 +89,9 @@ function Register() {
       <p>
         Already have an account? <Link to="/login">Login</Link>
       </p>
+      <p>
+        Want to register a new salon? <Link to="/register-new-salon">Register Here</Link>
+      </p>
     </div>
   );
 }
