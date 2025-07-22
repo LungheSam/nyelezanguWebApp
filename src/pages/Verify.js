@@ -23,7 +23,7 @@ function Verify() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('https://majiquickserver.onrender.com/auth/verify-code', {
+      const response = await fetch('https://nyelezanguserver2.onrender.com/auth/verify-code', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
