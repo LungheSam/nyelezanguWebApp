@@ -55,7 +55,7 @@
 }
 
 .salon-dashboard-page button:hover {
-  background-color: #d63384;
+  background-color: #f9c2d1;
 }
 
 /* Responsive Design */
@@ -153,4 +153,41 @@
   .salon-pages-card p {
     font-size: 1.5rem;
   }
+}
+
+.service-row{
+  border: none;
+  border-radius: 8px;
+  background-color: #f9c2d1;
+  padding:0.5rem;
+  margin-block: 0.5rem;
+}
+.service-row input {
+  padding: 14px;
+  margin: 10px auto;
+  border: 1px solid #f9c2d1;
+  border-radius: 12px;
+  background-color: #fff0f5;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.services-buttons{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-buttons button{
+  margin-right: 1rem;
+}
+.booking-item{
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #4a154b; 
+}
+.booking-item p, .booking-item h3{
+  color:#fff;
 }

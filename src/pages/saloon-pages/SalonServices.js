@@ -25,7 +25,7 @@ export default function SalonServices() {
     alert('Services updated!');
   };
 
-  return (
+  return ( 
     <div className="salon-dashboard-page">
       <h2>Manage Services</h2>
       {services.map((s, idx) => (
@@ -35,8 +35,11 @@ export default function SalonServices() {
           <input placeholder="Duration (min)" type="number" value={s.duration} onChange={e => changeService(idx, 'duration', e.target.value)} />
         </div>
       ))}
-      <button onClick={addService}>+ Add Service</button>
-      <button onClick={save}>Save Services</button>
+      <div className="services-buttons">
+        <button onClick={addService}>+ Add Service</button>
+        <button onClick={save}>Save Services</button>
+      </div>
+      
     </div>
   );
 }

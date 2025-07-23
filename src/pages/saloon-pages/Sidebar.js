@@ -18,6 +18,9 @@ export default function Sidebar({ isOpen, onClose }) {
       <div className={`sidebar-overlay ${isOpen ? 'visible' : ''}`} onClick={onClose}></div>
       <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-header">
+          <div className='sidebar-header-logo'>
+            <img src='NZ.png' alt='Logo'/>
+          </div>
           <h2>Nyele Zangu</h2>
         </div>
         <ul className="sidebar-menu">

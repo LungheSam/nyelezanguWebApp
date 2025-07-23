@@ -60,3 +60,6 @@
 .search-container .actions button.search-book-button{
   background-color: #c2185b;
 }
+.search-container .salon-card{
+  margin-block: 1rem;
+}

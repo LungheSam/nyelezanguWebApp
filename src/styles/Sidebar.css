@@ -59,7 +59,15 @@
   font-weight: bold;
   width: 100%;
 }
-
+.sidebar-header-logo{
+  max-width: 140px;
+  margin-inline: auto;
+}
+.sidebar-header-logo img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .saloon-logout-btn:hover {
   background-color: #c62828;
 }
