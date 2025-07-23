@@ -1,31 +1,10 @@
-// // src/pages/HomeSaloon.jsx
-// import React from 'react';
-// import SalonSidebar from './Sidebar';
-// import SalonHeader from './Header';
-// import { Outlet } from 'react-router-dom';
-// import '../../styles/HomeSaloon.css';
-
-// export default function HomeSaloon() {
-//   return (
-//     <div className="dashboard">
-//       <SalonSidebar />
-//       <div className="main-area">
-//         <SalonHeader />
-//         <div className="content">
-//           <Outlet />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-// src/pages/HomeSaloon.jsx
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import { Outlet } from 'react-router-dom';
 import '../../styles/HomeSaloon.css';
 
-export default function HomeSaloon() {
+export default function HomeSaloon({children}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -34,7 +13,7 @@ export default function HomeSaloon() {
       <div className="main-area">
         <Header onMenuClick={() => setMenuOpen(true)} />
         <main className="content">
-          <Outlet />
+          {children}
         </main>
       </div>
     </div>

@@ -12,6 +12,7 @@ function PrivateRoute({ children, requiredType }) {
     return <Navigate to="/unauthorized" replace />;
   }
 
+
   return children;
 }
 export default PrivateRoute;

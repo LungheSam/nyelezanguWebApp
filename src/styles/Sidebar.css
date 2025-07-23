@@ -10,6 +10,7 @@
 }
 
 .sidebar-header h2 {
+  margin-top: 20px;
   margin-bottom: 30px;
   font-size: 1.6rem;
   text-align: center;
@@ -23,9 +24,11 @@
 .sidebar-menu li {
   margin: 15px 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-block: 2rem;
-  
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  padding-block: 1rem;
 
 }
 
@@ -35,13 +38,12 @@
   font-size: 1.1rem;
   width: 100%;
   border: none;
-  border-radius: 5px;
-  text-align: center;
-  padding:1rem 2rem;
+  text-align: left;
+  font-weight: bold;
 }
 
 .sidebar-menu a:hover{
-  background-color: #c2185b;
+  color: #e53935;
   cursor: pointer;
 }
 

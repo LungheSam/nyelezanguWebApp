@@ -15,6 +15,11 @@ import SalonProfile from './pages/client-pages/SalonProfile';
 import BookAppointment from './pages/client-pages/BookAppointment';
 import Profile from './pages/client-pages/Profile';
 import SalonRegister from './pages/SalonRegister';
+import SalonApprovals from './pages/saloon-pages/SalonApprovals';
+import SalonEditProfile from './pages/saloon-pages/SalonEditProfile';
+import SalonServices from './pages/saloon-pages/SalonServices';
+import SalonBookings from './pages/saloon-pages/SalonBookings';
+import SalonDashboard from './pages/saloon-pages/SalonDashboard';
 function App() {
   return (
     <AuthProvider>
@@ -88,15 +93,72 @@ function App() {
           />
 
 
-          <Route
+          {/* <Route
             path="/home-saloon"
             element={
               <PrivateRoute requiredType="saloon">
                 <HomeSaloon />
               </PrivateRoute>
             }
-          />
-          
+          /> */}
+          <Route
+              path="/home-saloon"
+              element={
+                <PrivateRoute requiredType="saloon">
+                  <HomeSaloon>
+                    <SalonDashboard />
+                  </HomeSaloon>
+                </PrivateRoute>
+              }
+            />
+
+          <Route
+              path="/salon-profile"
+              element={
+                <PrivateRoute requiredType="saloon">
+                  <HomeSaloon>
+                    <SalonEditProfile />
+                  </HomeSaloon>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              path="/salon-bookings"
+              element={
+                <PrivateRoute requiredType="saloon">
+                  <HomeSaloon>
+                    <SalonBookings />
+                  </HomeSaloon>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              path="/salon-approvals"
+              element={
+                <PrivateRoute requiredType="saloon">
+                  <HomeSaloon>
+                    <SalonApprovals />
+                  </HomeSaloon>
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              path="/salon-services"
+              element={
+                <PrivateRoute requiredType="saloon">
+                  <HomeSaloon>
+                    <SalonServices />
+                  </HomeSaloon>
+                </PrivateRoute>
+              }
+            />
+
+
+            
+  
 
           <Route path="/login" element={<Login />} />
           <Route path="/register-new" element={<Register />} />
