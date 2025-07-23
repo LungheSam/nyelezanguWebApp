@@ -59,9 +59,10 @@
   background: #4a154b; 
   color: #fff 
 }
-.booking-card.pending h3, .booking-card.pending p{
+.booking-card.pending h3, .booking-card.pending p, .booking-card.approved h3, .booking-card.approved p{
   color:#fff;
 }
+
 .booking-card.approved { background: #d63384; }
 .booking-card.disapproved { background: #ffe5e5; }
 .booking-card.reschedule { background: #e5f0ff; }
