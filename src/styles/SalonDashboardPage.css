@@ -191,3 +191,6 @@
 .booking-item p, .booking-item h3{
   color:#fff;
 }
+.booking-item.booking-item-responded{
+  background-color: #4caf50;
+}

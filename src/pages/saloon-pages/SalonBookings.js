@@ -64,7 +64,7 @@ export default function SalonBookings() {
     <div className="salon-dashboard-page">
       <h2>All Bookings</h2>
       {bookings.length ? bookings.map(b => (
-        <div key={b.id} className="booking-item">
+        <div key={b.id} className={b.status=="pending"?"booking-item":"booking-item booking-item-responded"}>
           <p><strong>{b.user?.name || 'Unknown Client'}</strong> on {new Date(b.date.seconds * 1000).toLocaleDateString()} @ {b.time}</p>
           <p>Status: {b.status}</p>
           <p>Requested Service: <strong>{b.service}</strong></p>
