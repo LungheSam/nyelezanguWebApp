@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Nyele Zangu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Nyele Zangu – Where Beauty Meets Convenience** 💇🏽‍♀️
 
-## Available Scripts
+## 🌟 Project Overview
 
-In the project directory, you can run:
+Nyele Zangu is a digital platform designed to connect clients and trusted salons across Uganda. The web/mobile-ready application lets clients discover salons via location, name or service filters, view ratings & availability, book appointments instantly, and manage bookings — all from their phone or browser. For salon owners, Nyele Zangu provides tools to create a profile, list services & pricing, manage bookings, and reach new clients with a professional online presence.
 
-### `npm start`
+With Nyele Zangu, beauty becomes simple, accessible, and dependable for everyone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Search & Discover** salons by name, location, or services.  
+- **Interactive Map** to locate nearby salons and filter by distance, rating, or services.  
+- **Salon Profiles** featuring address, services, prices, ratings, and reviews.  
+- **Instant Booking**: schedule appointments, choose date/time, and get confirmation.  
+- **Booking Management**: clients can view upcoming bookings; salons can approve/decline or reschedule.  
+- **Salon Dashboard** for owners: manage profile, services, bookings, and client requests.  
+- **Role-based Access**: separate views and permissions for clients and salon owners.
 
-### `npm test`
+## 📂 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+/src
+/pages
+/client-pages → client app pages (search, booking, profile, etc.)
+/saloon-pages → salon-owner dashboard pages (services, approvals, etc.)
+/components → shared components (Header, Sidebar, etc.)
+/styles → CSS / styling files
+firebase.js → Firebase config & initialization
+...
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_(More details will be added as project evolves.)_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started (for developers)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/your-username/nyele-zangu.git
+   cd nyele-zangu
 
-### `npm run eject`
+    Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Setup environment variables (e.g. Firebase config) — create a .env file with required keys
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the development server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-## Learn More
+Navigate to http://localhost:3000 to view the app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+(Optional) Build for production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    npm run build
 
-### Code Splitting
+🧪 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Frontend: React.js with React Router
 
-### Analyzing the Bundle Size
+    Backend / Auth / Database: Firebase (Auth + Firestore)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    (Future) Notification + SMS/email service for bookings
 
-### Making a Progressive Web App
+    Styling: CSS / SCSS (custom), responsive layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🎨 Design & UX
 
-### Advanced Configuration
+We follow a mobile-first, responsive design with clean, pastel-themed UI. The goal is to deliver a user-friendly experience for both clients and salon owners, even on low-end devices and slower connections.
+🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We welcome contributions! Feel free to open an issue or submit a pull request.
+Please make sure to:
 
-### Deployment
+    Follow code style and folder conventions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    Document any new feature or significant change
 
-### `npm run build` fails to minify
+    Write clean, readable code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
